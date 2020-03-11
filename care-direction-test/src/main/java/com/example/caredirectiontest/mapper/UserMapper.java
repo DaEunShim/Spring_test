@@ -17,4 +17,8 @@ public interface UserMapper {
     @Options(useGeneratedKeys = true, keyColumn = "user.userIdx")
     int save(@Param("user") final User user);
 
+    // user_idx 조회
+    @Select("SELECT * FROM user WHERE user_idx = #{userIdx}")
+    User findByUserIdx(@Param("userIdx") final int userIdx);
+
 }
