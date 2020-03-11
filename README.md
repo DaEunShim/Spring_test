@@ -1,2 +1,2 @@
-# Spring_test_caredirection
+# Spring_test
 스프링 연습
