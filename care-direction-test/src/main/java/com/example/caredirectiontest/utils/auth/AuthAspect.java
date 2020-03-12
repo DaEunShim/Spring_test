@@ -37,6 +37,7 @@ public class AuthAspect {
 
     // 토큰 유효성 검사
 
+    // around는 실행 전/후에 공통로직을 넣고 싶을 때 사용  @Before, @after도 있음
     //항상 @annotation 패키지 이름을 실제 사용할 annotation 경로로 맞춰줘야 한다.
     @Around("@annotation(com.example.caredirectiontest.utils.auth.Auth)")
     public Object around(final ProceedingJoinPoint pjp) throws Throwable {
